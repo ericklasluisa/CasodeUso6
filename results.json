@@ -1,0 +1,402 @@
+[
+  {
+    "uri": "Feature/actualizar.feature",
+    "id": "actualizar-veh\u00edculo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Actualizar veh\u00edculo",
+    "description": "",
+    "elements": [
+      {
+        "id": "actualizar-un-vehiculo",
+        "line": 3,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Actualizar un vehiculo",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 4,
+            "name": "Se inicia el navegador",
+            "result": {
+              "status": "passed",
+              "duration": 2.2828333377838135
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 5,
+            "name": "Entra a la seccion vehiculo",
+            "result": {
+              "status": "passed",
+              "duration": 0.4162580966949463
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 6,
+            "name": "Aplasta el bot\u00f3n editar",
+            "result": {
+              "status": "passed",
+              "duration": 0.18348383903503418
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 7,
+            "name": "Actualizar el campo Marca Chevrolet",
+            "result": {
+              "status": "passed",
+              "duration": 0.2608640193939209
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 8,
+            "name": "Actualizar el campo Modelo Montana",
+            "result": {
+              "status": "passed",
+              "duration": 0.2055974006652832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 9,
+            "name": "Actualizar el campo Kilometraje 10800",
+            "result": {
+              "status": "passed",
+              "duration": 0.20561957359313965
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 10,
+            "name": "Seleccionar el tipo de combustible Electrico",
+            "result": {
+              "status": "passed",
+              "duration": 0.19159722328186035
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 11,
+            "name": "Actualizar el campo Peso 120",
+            "result": {
+              "status": "passed",
+              "duration": 0.22300219535827637
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 12,
+            "name": "Aplastar el boton para editar",
+            "result": {
+              "status": "passed",
+              "duration": 2.1711158752441406
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 13,
+            "name": "Visualizar alerta confirmacion",
+            "result": {
+              "status": "passed",
+              "duration": 1.1312007904052734
+            }
+          }
+        ]
+      },
+      {
+        "id": "ingresar-una-marca-incorrecta",
+        "line": 15,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Ingresar una marca incorrecta",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 16,
+            "name": "Se inicia el navegador",
+            "result": {
+              "status": "passed",
+              "duration": 1.5993773937225342
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 17,
+            "name": "Entra a la seccion vehiculo",
+            "result": {
+              "status": "passed",
+              "duration": 0.4275519847869873
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 18,
+            "name": "Aplasta el bot\u00f3n editar",
+            "result": {
+              "status": "passed",
+              "duration": 0.17915010452270508
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 19,
+            "name": "Actualizar el campo Marca 123",
+            "result": {
+              "status": "passed",
+              "duration": 0.2815260887145996
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 20,
+            "name": "Aplastar el boton para editar",
+            "result": {
+              "status": "passed",
+              "duration": 2.2128171920776367
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 21,
+            "name": "Visualizar alerta confirmacion",
+            "result": {
+              "status": "failed",
+              "duration": 5.0763115882873535
+            }
+          }
+        ]
+      },
+      {
+        "id": "ingresar-un-modelo-incorrecto",
+        "line": 23,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Ingresar un modelo incorrecto",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 24,
+            "name": "Se inicia el navegador",
+            "result": {
+              "status": "passed",
+              "duration": 1.3568196296691895
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 25,
+            "name": "Entra a la seccion vehiculo",
+            "result": {
+              "status": "passed",
+              "duration": 0.37352514266967773
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 26,
+            "name": "Aplasta el bot\u00f3n editar",
+            "result": {
+              "status": "passed",
+              "duration": 0.17452359199523926
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 27,
+            "name": "Actualizar el campo Modelo 123",
+            "result": {
+              "status": "passed",
+              "duration": 0.2559990882873535
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 28,
+            "name": "Aplastar el boton para editar",
+            "result": {
+              "status": "passed",
+              "duration": 2.2056052684783936
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 29,
+            "name": "Visualizar alerta confirmacion",
+            "result": {
+              "status": "failed",
+              "duration": 5.074544429779053
+            }
+          }
+        ]
+      },
+      {
+        "id": "ingresar-un-kilometraje-incorrecto",
+        "line": 31,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Ingresar un kilometraje incorrecto",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 32,
+            "name": "Se inicia el navegador",
+            "result": {
+              "status": "passed",
+              "duration": 1.3405194282531738
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 33,
+            "name": "Entra a la seccion vehiculo",
+            "result": {
+              "status": "passed",
+              "duration": 0.35387539863586426
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 34,
+            "name": "Aplasta el bot\u00f3n editar",
+            "result": {
+              "status": "passed",
+              "duration": 0.19501352310180664
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 35,
+            "name": "Actualizar el campo Kilometraje mil",
+            "result": {
+              "status": "passed",
+              "duration": 0.26000261306762695
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 36,
+            "name": "Aplastar el boton para editar",
+            "result": {
+              "status": "passed",
+              "duration": 2.200261116027832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 37,
+            "name": "Visualizar alerta confirmacion",
+            "result": {
+              "status": "failed",
+              "duration": 5.0746142864227295
+            }
+          }
+        ]
+      },
+      {
+        "id": "ingresar-un-peso-incorrecto",
+        "line": 39,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Ingresar un peso incorrecto",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 40,
+            "name": "Se inicia el navegador",
+            "result": {
+              "status": "passed",
+              "duration": 1.3393690586090088
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 41,
+            "name": "Entra a la seccion vehiculo",
+            "result": {
+              "status": "passed",
+              "duration": 0.44762420654296875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 42,
+            "name": "Aplasta el bot\u00f3n editar",
+            "result": {
+              "status": "passed",
+              "duration": 0.19951462745666504
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 43,
+            "name": "Actualizar el campo Peso cien",
+            "result": {
+              "status": "passed",
+              "duration": 0.25087666511535645
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 44,
+            "name": "Aplastar el boton para editar",
+            "result": {
+              "status": "passed",
+              "duration": 2.1881051063537598
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 45,
+            "name": "Visualizar alerta confirmacion",
+            "result": {
+              "status": "failed",
+              "duration": 5.077879428863525
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
