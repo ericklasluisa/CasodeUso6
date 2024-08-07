@@ -49,7 +49,7 @@ def iniciarNavegador(context):
 def entrar_seccion_vehiculo(context):
     try:
         context.driver.maximize_window()
-        context.driver.get("C:\\Users\\erick\\Desktop\\ESPE\\QUINTO SEMESTRE\\REQUISITOS\\PRUEBAS-RF\\Vehiculo\\Vehiculo\\Vehiculo.html")
+        context.driver.get("C:\\Users\\erick\\Desktop\\ESPE\\QUINTO SEMESTRE\\REQUISITOS\\PRUEBAS-RF\\CU6\\Vehiculo\\ActualizarVehiculo.html")
         take_screenshot(context, '1. Entra a la seccion actualizar vehiculo')
         print("Entered 'Vehiculo' section")
     except Exception as e:
