@@ -39,23 +39,23 @@ def mark_step_as_failed(context, step_name, exception):
 def mark_step_as_passed(context, step_name):
     print(f"Step passed: {step_name}")
 
-@given('Se inicia el navegador')
+@given('Se inicia el navegador actualizar vehiculo')
 def iniciarNavegador(context):
     context.driver = webdriver.Chrome(options=options)
     context.failed_steps = []
     print("Browser started")
 
-@when('Entra a la seccion vehiculo')
+@when('Entra a la seccion actualizar vehiculo')
 def entrar_seccion_vehiculo(context):
     try:
         context.driver.maximize_window()
         context.driver.get("C:\\Users\\erick\\Desktop\\ESPE\\QUINTO SEMESTRE\\REQUISITOS\\PRUEBAS-RF\\Vehiculo\\Vehiculo\\Vehiculo.html")
-        take_screenshot(context, '1. Entra a la seccion vehiculo')
+        take_screenshot(context, '1. Entra a la seccion actualizar vehiculo')
         print("Entered 'Vehiculo' section")
     except Exception as e:
         mark_step_as_failed(context, 'entra_seccion_vehiculo', e)
 
-@when('Aplasta el botón editar')
+@when('Aplasta el icono para editar vehiculo')
 def aplastar_boton_editar(context):
     try:
         editar_button = context.driver.find_element(By.XPATH, '//*[@id="editar-0"]')
@@ -64,68 +64,68 @@ def aplastar_boton_editar(context):
     except Exception as e:
         mark_step_as_failed(context, 'aplastar_boton_editar', e)
 
-@when('Actualizar el campo Marca {marca}')
+@when('Actualizar en vehiculo el campo Marca {marca}')
 def actualizar_marca(context, marca):
     try:
         marca_field = context.driver.find_element(By.XPATH, '//*[@id="editMarca"]')
         marca_field.clear()
         marca_field.send_keys(marca)
-        take_screenshot(context, '3. Actualizar el campo Marca')
+        take_screenshot(context, '3. Actualizar en vehiculo el campo Marca')
     except Exception as e:
         mark_step_as_failed(context, 'actualizar_marca', e)
 
-@when('Actualizar el campo Modelo {modelo}')
+@when('Actualizar en vehiculo el campo Modelo {modelo}')
 def actualizar_modelo(context, modelo):
     try:
         modelo_field = context.driver.find_element(By.XPATH, '//*[@id="editModelo"]')
         modelo_field.clear()
         modelo_field.send_keys(modelo)
-        take_screenshot(context, '4. Actualizar el campo Modelo')
+        take_screenshot(context, '4. Actualizar en vehiculo el campo Modelo')
     except Exception as e:
         mark_step_as_failed(context, 'actualizar_modelo', e)
 
-@when('Actualizar el campo Kilometraje {kilometraje}')
+@when('Actualizar en vehiculo el campo Kilometraje {kilometraje}')
 def actualizar_kilometraje(context, kilometraje):
     try:
         kilometraje_field = context.driver.find_element(By.XPATH, '//*[@id="editKilometraje"]')
         kilometraje_field.clear()
         kilometraje_field.send_keys(kilometraje)
-        take_screenshot(context, '7. Actualizar el campo Kilometraje')
+        take_screenshot(context, '7. Actualizar en vehiculo el campo Kilometraje')
     except Exception as e:
         mark_step_as_failed(context, 'actualizar_kilometraje', e)
 
-@when('Seleccionar el tipo de combustible {combustible}')
+@when('Seleccionar en vehiculo el tipo de combustible {combustible}')
 def seleccionar_combustible(context, combustible):
     try:
         combustible_dropdown = Select(context.driver.find_element(By.XPATH, '//*[@id="editCombustible"]'))
         combustible_dropdown.select_by_visible_text(combustible)
-        take_screenshot(context, '8. Seleccionar el tipo de combustible')
+        take_screenshot(context, '8. Seleccionar en vehiculo el tipo de combustible')
     except Exception as e:
         mark_step_as_failed(context, 'seleccionar_combustible', e)
 
-@when('Actualizar el campo Peso {peso}')
+@when('Actualizar en vehiculo el campo Peso {peso}')
 def actualizar_peso(context, peso):
     try:
         peso_field = context.driver.find_element(By.XPATH, '//*[@id="editPeso"]')
         peso_field.clear()
         peso_field.send_keys(peso)
-        take_screenshot(context, '9. Actualizar el campo Peso')
+        take_screenshot(context, '9. Actualizar en vehiculo el campo Peso')
     except Exception as e:
         mark_step_as_failed(context, 'actualizar_peso', e)
 
-@then('Aplastar el boton para editar')
+@then('Aplastar el boton para editar vehiculo')
 def aplastar_editar_vehiculo(context):
     try:
         guardar_button = context.driver.find_element(By.XPATH, '//*[@id="editVehiculoForm"]/button')
         time.sleep(1)
         guardar_button.click()
         time.sleep(1)
-        take_screenshot(context, '11. Aplastar el boton para editar')
+        take_screenshot(context, '11. Aplastar el boton para editar vehiculo')
         print("Vehicle edited")
     except Exception as e:
         mark_step_as_failed(context, 'aplastar_guardar_vehiculo', e)
 
-@then('Visualizar alerta confirmacion')
+@then('Visualizar alerta confirmacion actualizacion vehiculo')
 def verificarMensaje(context):
     try:
         # Esperar a que el modal de confirmación aparezca
